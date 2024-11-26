@@ -1,0 +1,100 @@
+body{
+    background-color: #F7ECDE;
+}
+::selection{
+    background-color: #FEC260;
+}
+.table>:not(caption)>*>* {
+    padding: 1rem 2rem;
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 3.125rem;
+    font-weight: 500;
+    color: rgb(53, 46, 40);
+    position: relative;
+    padding: 10px 0;
+    margin: 50px;
+}
+h1::after {
+    content: "";
+    position: absolute;
+    width: 265px;
+    height: 25%;
+    left: 37%;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 0.5s;
+    z-index: -1;
+}
+h1:hover::after {
+    height: 50%;
+}
+
+h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    background-image: linear-gradient(to right, red , yellow);
+    background-clip: text;
+    color: transparent;
+    padding-top: 30px;
+    text-align: center;
+}
+.site-form{
+    border-top: 2px black dotted;
+    border-bottom: 2px black dotted;
+    font-family: "PT Sans Caption", sans-serif;
+
+}
+
+.form-control:focus {
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+label{
+    font-weight: 600;
+}
+.site-form button{
+    background-color: #D1512D;
+    color: white;
+}
+.btn:hover {
+    color: white;
+    background-color: #BB4120;
+    border-color: #BB4120;
+}
+thead{
+    font-weight: 700;
+    font-family: "PT Sans Caption", sans-serif;
+}
+a{
+    background-color: #9EB23B;
+    border: .5px solid #9EB23B;
+    font-family: "PT Sans Caption", sans-serif;
+    padding: 8px 15px;
+    border-radius: 5px;  
+    text-decoration: none;
+    color: white;  
+}
+a:hover{
+    background-color: #8A9E23;
+    border: .5px solid #9EB23B;
+}
+.btn-delete{
+    background-color: #EB1D36;
+    color: white;
+    border: .5px solid #EB1D36 ;
+    font-family: "PT Sans Caption", sans-serif;
+
+}
+.btn-delete:hover{
+    background-color: #D30820;
+    border: #D30820;
+    border: .5px solid #EB1D36 ;
+
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
+    border:1px solid black !important;
+}
